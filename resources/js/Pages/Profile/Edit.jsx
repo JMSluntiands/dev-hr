@@ -4,7 +4,7 @@ import DeleteUserForm from './Partials/DeleteUserForm';
 import UpdatePasswordForm from './Partials/UpdatePasswordForm';
 import UpdateProfileInformationForm from './Partials/UpdateProfileInformationForm';
 
-export default function Edit({ mustVerifyEmail, status }) {
+export default function Edit({ mustVerifyEmail, status, isGoogleAccount = false }) {
     return (
         <AuthenticatedLayout
             header={
@@ -25,7 +25,10 @@ export default function Edit({ mustVerifyEmail, status }) {
                 </div>
 
                 <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm dark:border-slate-800 dark:bg-[#121a2b] sm:p-8">
-                    <UpdatePasswordForm className="max-w-xl" />
+                    <UpdatePasswordForm
+                        className="max-w-xl"
+                        isGoogleAccount={isGoogleAccount}
+                    />
                 </div>
 
                 <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm dark:border-slate-800 dark:bg-[#121a2b] sm:p-8">

@@ -260,7 +260,10 @@ class PermissionRegistry
         $all = collect(self::definitions())->pluck('key')->all();
 
         return [
-            'admin' => $all,
+            'admin' => array_values(array_filter(
+                $all,
+                fn (string $key) => $key !== 'me.view',
+            )),
             'hr' => [
                 'dashboard.view',
                 'me.view',

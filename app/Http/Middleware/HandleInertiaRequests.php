@@ -55,7 +55,6 @@ class HandleInertiaRequests extends Middleware
                 $permissionService->grantMissingPermissionKey('discipline.view');
                 $permissionService->grantMissingPermissionKey('inventory.approvals');
                 $permissionService->grantMissingPermissionKey('inventory.summary');
-                $permissionService->grantMissingPermissionKey('me.view');
                 $permissions = $permissionService->keysForUser($user->fresh());
 
                 if (in_array('leave.approvals', $permissions, true)) {
@@ -121,6 +120,7 @@ class HandleInertiaRequests extends Middleware
                 'success' => $success,
                 'error' => $error,
             ],
+            'sessionLifetime' => (int) config('session.lifetime', 15),
         ];
     }
 }

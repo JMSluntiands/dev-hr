@@ -2,6 +2,7 @@ import ApplicationLogo from '@/Components/ApplicationLogo';
 import FlashAlert from '@/Components/FlashAlert';
 import SidebarLink from '@/Components/SidebarLink';
 import ThemeToggle from '@/Components/ThemeToggle';
+import useIdleLogout from '@/hooks/useIdleLogout';
 import { Link, usePage } from '@inertiajs/react';
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 
@@ -41,15 +42,6 @@ function CalendarIcon() {
         <svg className={iconClass} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.8">
             <rect x="3.5" y="5" width="17" height="15" rx="2" />
             <path strokeLinecap="round" d="M8 3.5V7M16 3.5V7M3.5 10h17" />
-        </svg>
-    );
-}
-
-function LeaveCreditsIcon() {
-    return (
-        <svg className={iconClass} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.8">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 7.5h15M4.5 12h15M4.5 16.5h9" />
-            <path strokeLinecap="round" strokeLinejoin="round" d="M7 4.5v15" />
         </svg>
     );
 }
@@ -237,6 +229,7 @@ const navigation = [
                 routeName: 'me.show',
                 icon: <UserIcon />,
                 permission: 'me.view',
+                hideForRoles: ['admin'],
             },
         ],
     },
@@ -312,13 +305,6 @@ const navigation = [
                 icon: <LeaveApprovalIcon />,
                 permission: 'leave.approvals',
                 countKey: 'leave',
-            },
-            {
-                name: 'Leave Credits',
-                href: 'leave.credits',
-                routeName: 'leave.credits',
-                icon: <LeaveCreditsIcon />,
-                permission: 'leave.credits',
             },
         ],
     },
@@ -446,6 +432,8 @@ export default function AuthenticatedLayout({ header, children }) {
     const permissions = page.props.auth?.permissions || [];
     const approvalCounts = page.props.approvalCounts || {};
     const disciplineOwnCount = page.props.disciplineOwnCount || 0;
+    const sessionLifetime = Number(page.props.sessionLifetime) || 15;
+    useIdleLogout(sessionLifetime, Boolean(user));
     const navRef = useRef(null);
     const [mobileOpen, setMobileOpen] = useState(false);
     const [collapsed, setCollapsed] = useState(() => {
@@ -504,6 +492,16 @@ export default function AuthenticatedLayout({ header, children }) {
             items: section.items
                 .filter((item) => {
                     if (!can(item.permission)) {
+                        return false;
+                    }
+
+                    const role = String(user?.role || '').toLowerCase();
+                    if (
+                        Array.isArray(item.hideForRoles) &&
+                        item.hideForRoles.some(
+                            (r) => String(r).toLowerCase() === role,
+                        )
+                    ) {
                         return false;
                     }
 

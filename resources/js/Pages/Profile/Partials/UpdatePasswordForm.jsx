@@ -6,7 +6,10 @@ import { Transition } from '@headlessui/react';
 import { useForm } from '@inertiajs/react';
 import { useRef } from 'react';
 
-export default function UpdatePasswordForm({ className = '' }) {
+export default function UpdatePasswordForm({
+    className = '',
+    isGoogleAccount = false,
+}) {
     const passwordInput = useRef();
     const currentPasswordInput = useRef();
 
@@ -30,15 +33,15 @@ export default function UpdatePasswordForm({ className = '' }) {
         put(route('password.update'), {
             preserveScroll: true,
             onSuccess: () => reset(),
-            onError: (errors) => {
-                if (errors.password) {
+            onError: (formErrors) => {
+                if (formErrors.password) {
                     reset('password', 'password_confirmation');
-                    passwordInput.current.focus();
+                    passwordInput.current?.focus();
                 }
 
-                if (errors.current_password) {
+                if (formErrors.current_password) {
                     reset('current_password');
-                    currentPasswordInput.current.focus();
+                    currentPasswordInput.current?.focus();
                 }
             },
         });
@@ -47,43 +50,49 @@ export default function UpdatePasswordForm({ className = '' }) {
     return (
         <section className={className}>
             <header>
-                <h2 className="text-lg font-medium text-gray-900">
-                    Update Password
+                <h2 className="text-lg font-medium text-slate-900 dark:text-white">
+                    {isGoogleAccount ? 'Set Password' : 'Update Password'}
                 </h2>
 
-                <p className="mt-1 text-sm text-gray-600">
-                    Ensure your account is using a long, random password to stay
-                    secure.
+                <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
+                    {isGoogleAccount
+                        ? 'You signed in with Gmail, so there is no current password. You can set one here if you also want email/password login.'
+                        : 'Ensure your account is using a long, random password to stay secure.'}
                 </p>
             </header>
 
             <form onSubmit={updatePassword} className="mt-6 space-y-6">
+                {!isGoogleAccount && (
+                    <div>
+                        <InputLabel
+                            htmlFor="current_password"
+                            value="Current Password"
+                        />
+
+                        <TextInput
+                            id="current_password"
+                            ref={currentPasswordInput}
+                            value={data.current_password}
+                            onChange={(e) =>
+                                setData('current_password', e.target.value)
+                            }
+                            type="password"
+                            className="mt-1 block w-full"
+                            autoComplete="current-password"
+                        />
+
+                        <InputError
+                            message={errors.current_password}
+                            className="mt-2"
+                        />
+                    </div>
+                )}
+
                 <div>
                     <InputLabel
-                        htmlFor="current_password"
-                        value="Current Password"
+                        htmlFor="password"
+                        value={isGoogleAccount ? 'New Password' : 'New Password'}
                     />
-
-                    <TextInput
-                        id="current_password"
-                        ref={currentPasswordInput}
-                        value={data.current_password}
-                        onChange={(e) =>
-                            setData('current_password', e.target.value)
-                        }
-                        type="password"
-                        className="mt-1 block w-full"
-                        autoComplete="current-password"
-                    />
-
-                    <InputError
-                        message={errors.current_password}
-                        className="mt-2"
-                    />
-                </div>
-
-                <div>
-                    <InputLabel htmlFor="password" value="New Password" />
 
                     <TextInput
                         id="password"
@@ -131,7 +140,7 @@ export default function UpdatePasswordForm({ className = '' }) {
                         leave="transition ease-in-out"
                         leaveTo="opacity-0"
                     >
-                        <p className="text-sm text-gray-600">
+                        <p className="text-sm text-slate-600 dark:text-slate-400">
                             Saved.
                         </p>
                     </Transition>

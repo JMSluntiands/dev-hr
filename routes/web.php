@@ -52,11 +52,6 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::post('/leave/request', [LeaveController::class, 'store'])->name('leave.store');
     Route::post('/leave/request/{leaveRequest}/cancel', [LeaveController::class, 'cancel'])->name('leave.cancel');
 
-    Route::get('/leave/credits', fn () => Inertia::render('ComingSoon', [
-        'title' => 'Leave Credits',
-        'description' => 'View remaining leave credits by leave type.',
-    ]))->name('leave.credits');
-
     Route::get('/leave/approvals', [LeaveController::class, 'approvals'])->name('leave.approvals');
     Route::post('/leave/approvals/{leaveRequest}/status', [LeaveController::class, 'updateStatus'])->name('leave.status');
 

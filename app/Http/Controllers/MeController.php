@@ -17,9 +17,11 @@ class MeController extends Controller
 
     public function show(Request $request): Response
     {
+        $user = $request->user();
+        abort_if(strtolower((string) $user?->role) === 'admin', 403);
+
         $this->permissions->grantMissingPermissionKey('me.view');
 
-        $user = $request->user();
         abort_unless($this->permissions->userHas($user, 'me.view'), 403);
 
         $employee = Employee::query()
