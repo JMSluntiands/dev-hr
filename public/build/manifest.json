@@ -1,0 +1,862 @@
+{
+  "_ApplicationLogo-D8QEca9e.js": {
+    "file": "assets/ApplicationLogo-D8QEca9e.js",
+    "name": "ApplicationLogo",
+    "imports": [
+      "resources/js/app.jsx",
+      "_LuntianLogo-DgSiHUvq.js"
+    ]
+  },
+  "_AuthenticatedLayout-C-yNcbE4.js": {
+    "file": "assets/AuthenticatedLayout-C-yNcbE4.js",
+    "name": "AuthenticatedLayout",
+    "imports": [
+      "resources/js/app.jsx",
+      "_ApplicationLogo-D8QEca9e.js",
+      "_ThemeToggle-Dymx3ho-.js"
+    ]
+  },
+  "_DisciplineProgress-_WHTn7DA.js": {
+    "file": "assets/DisciplineProgress-_WHTn7DA.js",
+    "name": "DisciplineProgress",
+    "imports": [
+      "resources/js/app.jsx"
+    ]
+  },
+  "_GuestLayout-gPPeGLeF.js": {
+    "file": "assets/GuestLayout-gPPeGLeF.js",
+    "name": "GuestLayout",
+    "imports": [
+      "resources/js/app.jsx",
+      "_ApplicationLogo-D8QEca9e.js"
+    ]
+  },
+  "_InputError-o6lC853a.js": {
+    "file": "assets/InputError-o6lC853a.js",
+    "name": "InputError",
+    "imports": [
+      "resources/js/app.jsx"
+    ]
+  },
+  "_InputLabel-B5HUUqYe.js": {
+    "file": "assets/InputLabel-B5HUUqYe.js",
+    "name": "InputLabel",
+    "imports": [
+      "resources/js/app.jsx"
+    ]
+  },
+  "_LuntianLogo-DgSiHUvq.js": {
+    "file": "assets/LuntianLogo-DgSiHUvq.js",
+    "name": "LuntianLogo",
+    "imports": [
+      "resources/js/app.jsx"
+    ]
+  },
+  "_PrimaryButton-BGUaUQyx.js": {
+    "file": "assets/PrimaryButton-BGUaUQyx.js",
+    "name": "PrimaryButton",
+    "imports": [
+      "resources/js/app.jsx"
+    ]
+  },
+  "_SearchableSelect-BSMPqfp-.js": {
+    "file": "assets/SearchableSelect-BSMPqfp-.js",
+    "name": "SearchableSelect",
+    "imports": [
+      "resources/js/app.jsx"
+    ]
+  },
+  "_TextInput-CqVbxlin.js": {
+    "file": "assets/TextInput-CqVbxlin.js",
+    "name": "TextInput",
+    "imports": [
+      "resources/js/app.jsx"
+    ]
+  },
+  "_ThemeToggle-Dymx3ho-.js": {
+    "file": "assets/ThemeToggle-Dymx3ho-.js",
+    "name": "ThemeToggle",
+    "imports": [
+      "resources/js/app.jsx"
+    ]
+  },
+  "_transition-ClgB8LYi.js": {
+    "file": "assets/transition-ClgB8LYi.js",
+    "name": "transition",
+    "imports": [
+      "resources/js/app.jsx"
+    ]
+  },
+  "_useCan-DbjV7y3D.js": {
+    "file": "assets/useCan-DbjV7y3D.js",
+    "name": "useCan",
+    "imports": [
+      "resources/js/app.jsx"
+    ]
+  },
+  "resources/js/Pages/ActivityLog/Index.jsx": {
+    "file": "assets/Index-ddGuVCvo.js",
+    "name": "Index",
+    "src": "resources/js/Pages/ActivityLog/Index.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AuthenticatedLayout-C-yNcbE4.js",
+      "_ApplicationLogo-D8QEca9e.js",
+      "_LuntianLogo-DgSiHUvq.js",
+      "_ThemeToggle-Dymx3ho-.js"
+    ]
+  },
+  "resources/js/Pages/Attendance/Index.jsx": {
+    "file": "assets/Index-CWKOgwgu.js",
+    "name": "Index",
+    "src": "resources/js/Pages/Attendance/Index.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AuthenticatedLayout-C-yNcbE4.js",
+      "_ApplicationLogo-D8QEca9e.js",
+      "_LuntianLogo-DgSiHUvq.js",
+      "_ThemeToggle-Dymx3ho-.js"
+    ]
+  },
+  "resources/js/Pages/Auth/ConfirmPassword.jsx": {
+    "file": "assets/ConfirmPassword-CM5huwkE.js",
+    "name": "ConfirmPassword",
+    "src": "resources/js/Pages/Auth/ConfirmPassword.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_InputError-o6lC853a.js",
+      "_InputLabel-B5HUUqYe.js",
+      "_PrimaryButton-BGUaUQyx.js",
+      "_TextInput-CqVbxlin.js",
+      "_GuestLayout-gPPeGLeF.js",
+      "_ApplicationLogo-D8QEca9e.js",
+      "_LuntianLogo-DgSiHUvq.js"
+    ]
+  },
+  "resources/js/Pages/Auth/ForgotPassword.jsx": {
+    "file": "assets/ForgotPassword-CnbtWDLk.js",
+    "name": "ForgotPassword",
+    "src": "resources/js/Pages/Auth/ForgotPassword.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_InputError-o6lC853a.js",
+      "_PrimaryButton-BGUaUQyx.js",
+      "_TextInput-CqVbxlin.js",
+      "_GuestLayout-gPPeGLeF.js",
+      "_ApplicationLogo-D8QEca9e.js",
+      "_LuntianLogo-DgSiHUvq.js"
+    ]
+  },
+  "resources/js/Pages/Auth/Login.jsx": {
+    "file": "assets/Login-DO05BPeN.js",
+    "name": "Login",
+    "src": "resources/js/Pages/Auth/Login.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_InputError-o6lC853a.js",
+      "_LuntianLogo-DgSiHUvq.js",
+      "_ThemeToggle-Dymx3ho-.js"
+    ]
+  },
+  "resources/js/Pages/Auth/Register.jsx": {
+    "file": "assets/Register-3Jn8HPDm.js",
+    "name": "Register",
+    "src": "resources/js/Pages/Auth/Register.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_InputError-o6lC853a.js",
+      "_InputLabel-B5HUUqYe.js",
+      "_PrimaryButton-BGUaUQyx.js",
+      "_TextInput-CqVbxlin.js",
+      "_GuestLayout-gPPeGLeF.js",
+      "_ApplicationLogo-D8QEca9e.js",
+      "_LuntianLogo-DgSiHUvq.js"
+    ]
+  },
+  "resources/js/Pages/Auth/ResetPassword.jsx": {
+    "file": "assets/ResetPassword-DVFC48ie.js",
+    "name": "ResetPassword",
+    "src": "resources/js/Pages/Auth/ResetPassword.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_InputError-o6lC853a.js",
+      "_InputLabel-B5HUUqYe.js",
+      "_PrimaryButton-BGUaUQyx.js",
+      "_TextInput-CqVbxlin.js",
+      "_GuestLayout-gPPeGLeF.js",
+      "_ApplicationLogo-D8QEca9e.js",
+      "_LuntianLogo-DgSiHUvq.js"
+    ]
+  },
+  "resources/js/Pages/Auth/VerifyEmail.jsx": {
+    "file": "assets/VerifyEmail-DAaxWEqL.js",
+    "name": "VerifyEmail",
+    "src": "resources/js/Pages/Auth/VerifyEmail.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_PrimaryButton-BGUaUQyx.js",
+      "_GuestLayout-gPPeGLeF.js",
+      "_ApplicationLogo-D8QEca9e.js",
+      "_LuntianLogo-DgSiHUvq.js"
+    ]
+  },
+  "resources/js/Pages/ComingSoon.jsx": {
+    "file": "assets/ComingSoon-DUZ0f42v.js",
+    "name": "ComingSoon",
+    "src": "resources/js/Pages/ComingSoon.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AuthenticatedLayout-C-yNcbE4.js",
+      "_ApplicationLogo-D8QEca9e.js",
+      "_LuntianLogo-DgSiHUvq.js",
+      "_ThemeToggle-Dymx3ho-.js"
+    ]
+  },
+  "resources/js/Pages/Dashboard.jsx": {
+    "file": "assets/Dashboard-BmJiouQk.js",
+    "name": "Dashboard",
+    "src": "resources/js/Pages/Dashboard.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AuthenticatedLayout-C-yNcbE4.js",
+      "_ApplicationLogo-D8QEca9e.js",
+      "_LuntianLogo-DgSiHUvq.js",
+      "_ThemeToggle-Dymx3ho-.js"
+    ]
+  },
+  "resources/js/Pages/Discipline/Create.jsx": {
+    "file": "assets/Create-DQlWCYsD.js",
+    "name": "Create",
+    "src": "resources/js/Pages/Discipline/Create.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AuthenticatedLayout-C-yNcbE4.js",
+      "_InputError-o6lC853a.js",
+      "_SearchableSelect-BSMPqfp-.js",
+      "_ApplicationLogo-D8QEca9e.js",
+      "_LuntianLogo-DgSiHUvq.js",
+      "_ThemeToggle-Dymx3ho-.js"
+    ]
+  },
+  "resources/js/Pages/Discipline/Index.jsx": {
+    "file": "assets/Index-BLvhHAHk.js",
+    "name": "Index",
+    "src": "resources/js/Pages/Discipline/Index.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AuthenticatedLayout-C-yNcbE4.js",
+      "_DisciplineProgress-_WHTn7DA.js",
+      "_useCan-DbjV7y3D.js",
+      "_ApplicationLogo-D8QEca9e.js",
+      "_LuntianLogo-DgSiHUvq.js",
+      "_ThemeToggle-Dymx3ho-.js"
+    ]
+  },
+  "resources/js/Pages/Discipline/Show.jsx": {
+    "file": "assets/Show-Cg7n6yDK.js",
+    "name": "Show",
+    "src": "resources/js/Pages/Discipline/Show.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AuthenticatedLayout-C-yNcbE4.js",
+      "_DisciplineProgress-_WHTn7DA.js",
+      "_ApplicationLogo-D8QEca9e.js",
+      "_LuntianLogo-DgSiHUvq.js",
+      "_ThemeToggle-Dymx3ho-.js"
+    ]
+  },
+  "resources/js/Pages/Employees/Create.jsx": {
+    "file": "assets/Create-CWfXHZy9.js",
+    "name": "Create",
+    "src": "resources/js/Pages/Employees/Create.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AuthenticatedLayout-C-yNcbE4.js",
+      "_InputError-o6lC853a.js",
+      "_SearchableSelect-BSMPqfp-.js",
+      "_ApplicationLogo-D8QEca9e.js",
+      "_LuntianLogo-DgSiHUvq.js",
+      "_ThemeToggle-Dymx3ho-.js"
+    ]
+  },
+  "resources/js/Pages/Employees/Edit.jsx": {
+    "file": "assets/Edit-Dh9r0zQy.js",
+    "name": "Edit",
+    "src": "resources/js/Pages/Employees/Edit.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AuthenticatedLayout-C-yNcbE4.js",
+      "_InputError-o6lC853a.js",
+      "_SearchableSelect-BSMPqfp-.js",
+      "_ApplicationLogo-D8QEca9e.js",
+      "_LuntianLogo-DgSiHUvq.js",
+      "_ThemeToggle-Dymx3ho-.js"
+    ]
+  },
+  "resources/js/Pages/Employees/Index.jsx": {
+    "file": "assets/Index-Bm1wZyGX.js",
+    "name": "Index",
+    "src": "resources/js/Pages/Employees/Index.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AuthenticatedLayout-C-yNcbE4.js",
+      "_useCan-DbjV7y3D.js",
+      "_ApplicationLogo-D8QEca9e.js",
+      "_LuntianLogo-DgSiHUvq.js",
+      "_ThemeToggle-Dymx3ho-.js"
+    ]
+  },
+  "resources/js/Pages/Employees/Show.jsx": {
+    "file": "assets/Show-B0Ltr6CQ.js",
+    "name": "Show",
+    "src": "resources/js/Pages/Employees/Show.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AuthenticatedLayout-C-yNcbE4.js",
+      "_ApplicationLogo-D8QEca9e.js",
+      "_LuntianLogo-DgSiHUvq.js",
+      "_ThemeToggle-Dymx3ho-.js"
+    ]
+  },
+  "resources/js/Pages/Incidents/Approvals.jsx": {
+    "file": "assets/Approvals-CTh-pKdM.js",
+    "name": "Approvals",
+    "src": "resources/js/Pages/Incidents/Approvals.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AuthenticatedLayout-C-yNcbE4.js",
+      "_ApplicationLogo-D8QEca9e.js",
+      "_LuntianLogo-DgSiHUvq.js",
+      "_ThemeToggle-Dymx3ho-.js"
+    ]
+  },
+  "resources/js/Pages/Incidents/Create.jsx": {
+    "file": "assets/Create-DfK0vO5L.js",
+    "name": "Create",
+    "src": "resources/js/Pages/Incidents/Create.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AuthenticatedLayout-C-yNcbE4.js",
+      "_InputError-o6lC853a.js",
+      "_ApplicationLogo-D8QEca9e.js",
+      "_LuntianLogo-DgSiHUvq.js",
+      "_ThemeToggle-Dymx3ho-.js"
+    ]
+  },
+  "resources/js/Pages/Incidents/Index.jsx": {
+    "file": "assets/Index-DxqWx4I6.js",
+    "name": "Index",
+    "src": "resources/js/Pages/Incidents/Index.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AuthenticatedLayout-C-yNcbE4.js",
+      "_ApplicationLogo-D8QEca9e.js",
+      "_LuntianLogo-DgSiHUvq.js",
+      "_ThemeToggle-Dymx3ho-.js"
+    ]
+  },
+  "resources/js/Pages/Incidents/Show.jsx": {
+    "file": "assets/Show-CW9vgy3b.js",
+    "name": "Show",
+    "src": "resources/js/Pages/Incidents/Show.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AuthenticatedLayout-C-yNcbE4.js",
+      "_ApplicationLogo-D8QEca9e.js",
+      "_LuntianLogo-DgSiHUvq.js",
+      "_ThemeToggle-Dymx3ho-.js"
+    ]
+  },
+  "resources/js/Pages/Inventory/Approvals.jsx": {
+    "file": "assets/Approvals-BjPw_-oV.js",
+    "name": "Approvals",
+    "src": "resources/js/Pages/Inventory/Approvals.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AuthenticatedLayout-C-yNcbE4.js",
+      "_ApplicationLogo-D8QEca9e.js",
+      "_LuntianLogo-DgSiHUvq.js",
+      "_ThemeToggle-Dymx3ho-.js"
+    ]
+  },
+  "resources/js/Pages/Inventory/Create.jsx": {
+    "file": "assets/Create-DH6EubZa.js",
+    "name": "Create",
+    "src": "resources/js/Pages/Inventory/Create.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AuthenticatedLayout-C-yNcbE4.js",
+      "_InputError-o6lC853a.js",
+      "_ApplicationLogo-D8QEca9e.js",
+      "_LuntianLogo-DgSiHUvq.js",
+      "_ThemeToggle-Dymx3ho-.js"
+    ]
+  },
+  "resources/js/Pages/Inventory/ItemCreate.jsx": {
+    "file": "assets/ItemCreate-DHi5Y4yT.js",
+    "name": "ItemCreate",
+    "src": "resources/js/Pages/Inventory/ItemCreate.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AuthenticatedLayout-C-yNcbE4.js",
+      "_InputError-o6lC853a.js",
+      "_SearchableSelect-BSMPqfp-.js",
+      "_ApplicationLogo-D8QEca9e.js",
+      "_LuntianLogo-DgSiHUvq.js",
+      "_ThemeToggle-Dymx3ho-.js"
+    ]
+  },
+  "resources/js/Pages/Inventory/ItemEdit.jsx": {
+    "file": "assets/ItemEdit-B6zC7Jkh.js",
+    "name": "ItemEdit",
+    "src": "resources/js/Pages/Inventory/ItemEdit.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AuthenticatedLayout-C-yNcbE4.js",
+      "_InputError-o6lC853a.js",
+      "_SearchableSelect-BSMPqfp-.js",
+      "_ApplicationLogo-D8QEca9e.js",
+      "_LuntianLogo-DgSiHUvq.js",
+      "_ThemeToggle-Dymx3ho-.js"
+    ]
+  },
+  "resources/js/Pages/Inventory/ItemShow.jsx": {
+    "file": "assets/ItemShow-DKN8zsVk.js",
+    "name": "ItemShow",
+    "src": "resources/js/Pages/Inventory/ItemShow.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AuthenticatedLayout-C-yNcbE4.js",
+      "_ApplicationLogo-D8QEca9e.js",
+      "_LuntianLogo-DgSiHUvq.js",
+      "_ThemeToggle-Dymx3ho-.js"
+    ]
+  },
+  "resources/js/Pages/Inventory/Items.jsx": {
+    "file": "assets/Items-DIb-sQWP.js",
+    "name": "Items",
+    "src": "resources/js/Pages/Inventory/Items.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AuthenticatedLayout-C-yNcbE4.js",
+      "_useCan-DbjV7y3D.js",
+      "_ApplicationLogo-D8QEca9e.js",
+      "_LuntianLogo-DgSiHUvq.js",
+      "_ThemeToggle-Dymx3ho-.js"
+    ]
+  },
+  "resources/js/Pages/Inventory/PrintLabel.jsx": {
+    "file": "assets/PrintLabel-BQ-qrRPP.js",
+    "name": "PrintLabel",
+    "src": "resources/js/Pages/Inventory/PrintLabel.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx"
+    ]
+  },
+  "resources/js/Pages/Inventory/Request.jsx": {
+    "file": "assets/Request--bvCP_rz.js",
+    "name": "Request",
+    "src": "resources/js/Pages/Inventory/Request.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AuthenticatedLayout-C-yNcbE4.js",
+      "_useCan-DbjV7y3D.js",
+      "_ApplicationLogo-D8QEca9e.js",
+      "_LuntianLogo-DgSiHUvq.js",
+      "_ThemeToggle-Dymx3ho-.js"
+    ]
+  },
+  "resources/js/Pages/Inventory/Settings.jsx": {
+    "file": "assets/Settings-aAwU2yi6.js",
+    "name": "Settings",
+    "src": "resources/js/Pages/Inventory/Settings.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AuthenticatedLayout-C-yNcbE4.js",
+      "_InputError-o6lC853a.js",
+      "_ApplicationLogo-D8QEca9e.js",
+      "_LuntianLogo-DgSiHUvq.js",
+      "_ThemeToggle-Dymx3ho-.js"
+    ]
+  },
+  "resources/js/Pages/Inventory/Summary.jsx": {
+    "file": "assets/Summary-D_k6botB.js",
+    "name": "Summary",
+    "src": "resources/js/Pages/Inventory/Summary.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AuthenticatedLayout-C-yNcbE4.js",
+      "_ApplicationLogo-D8QEca9e.js",
+      "_LuntianLogo-DgSiHUvq.js",
+      "_ThemeToggle-Dymx3ho-.js"
+    ]
+  },
+  "resources/js/Pages/Leave/Approvals.jsx": {
+    "file": "assets/Approvals-BKiwqMsK.js",
+    "name": "Approvals",
+    "src": "resources/js/Pages/Leave/Approvals.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AuthenticatedLayout-C-yNcbE4.js",
+      "_ApplicationLogo-D8QEca9e.js",
+      "_LuntianLogo-DgSiHUvq.js",
+      "_ThemeToggle-Dymx3ho-.js"
+    ]
+  },
+  "resources/js/Pages/Leave/Create.jsx": {
+    "file": "assets/Create-CN_ww5Og.js",
+    "name": "Create",
+    "src": "resources/js/Pages/Leave/Create.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AuthenticatedLayout-C-yNcbE4.js",
+      "_InputError-o6lC853a.js",
+      "_ApplicationLogo-D8QEca9e.js",
+      "_LuntianLogo-DgSiHUvq.js",
+      "_ThemeToggle-Dymx3ho-.js"
+    ]
+  },
+  "resources/js/Pages/Leave/History.jsx": {
+    "file": "assets/History-eK_eBr8S.js",
+    "name": "History",
+    "src": "resources/js/Pages/Leave/History.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AuthenticatedLayout-C-yNcbE4.js",
+      "_ApplicationLogo-D8QEca9e.js",
+      "_LuntianLogo-DgSiHUvq.js",
+      "_ThemeToggle-Dymx3ho-.js"
+    ]
+  },
+  "resources/js/Pages/Leave/Request.jsx": {
+    "file": "assets/Request-gMpO3U7q.js",
+    "name": "Request",
+    "src": "resources/js/Pages/Leave/Request.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AuthenticatedLayout-C-yNcbE4.js",
+      "_ApplicationLogo-D8QEca9e.js",
+      "_LuntianLogo-DgSiHUvq.js",
+      "_ThemeToggle-Dymx3ho-.js"
+    ]
+  },
+  "resources/js/Pages/Me/Show.jsx": {
+    "file": "assets/Show-DpQ_k3zH.js",
+    "name": "Show",
+    "src": "resources/js/Pages/Me/Show.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AuthenticatedLayout-C-yNcbE4.js",
+      "_ApplicationLogo-D8QEca9e.js",
+      "_LuntianLogo-DgSiHUvq.js",
+      "_ThemeToggle-Dymx3ho-.js"
+    ]
+  },
+  "resources/js/Pages/Performance/Create.jsx": {
+    "file": "assets/Create-Dya3rpPo.js",
+    "name": "Create",
+    "src": "resources/js/Pages/Performance/Create.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AuthenticatedLayout-C-yNcbE4.js",
+      "_InputError-o6lC853a.js",
+      "_SearchableSelect-BSMPqfp-.js",
+      "_ApplicationLogo-D8QEca9e.js",
+      "_LuntianLogo-DgSiHUvq.js",
+      "_ThemeToggle-Dymx3ho-.js"
+    ]
+  },
+  "resources/js/Pages/Performance/Index.jsx": {
+    "file": "assets/Index-C7MtNNb7.js",
+    "name": "Index",
+    "src": "resources/js/Pages/Performance/Index.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AuthenticatedLayout-C-yNcbE4.js",
+      "_useCan-DbjV7y3D.js",
+      "_ApplicationLogo-D8QEca9e.js",
+      "_LuntianLogo-DgSiHUvq.js",
+      "_ThemeToggle-Dymx3ho-.js"
+    ]
+  },
+  "resources/js/Pages/Performance/Show.jsx": {
+    "file": "assets/Show-4DOvIoXq.js",
+    "name": "Show",
+    "src": "resources/js/Pages/Performance/Show.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AuthenticatedLayout-C-yNcbE4.js",
+      "_ApplicationLogo-D8QEca9e.js",
+      "_LuntianLogo-DgSiHUvq.js",
+      "_ThemeToggle-Dymx3ho-.js"
+    ]
+  },
+  "resources/js/Pages/Profile/Edit.jsx": {
+    "file": "assets/Edit-at4mFirH.js",
+    "name": "Edit",
+    "src": "resources/js/Pages/Profile/Edit.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AuthenticatedLayout-C-yNcbE4.js",
+      "resources/js/Pages/Profile/Partials/DeleteUserForm.jsx",
+      "resources/js/Pages/Profile/Partials/UpdatePasswordForm.jsx",
+      "resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.jsx",
+      "_ApplicationLogo-D8QEca9e.js",
+      "_LuntianLogo-DgSiHUvq.js",
+      "_ThemeToggle-Dymx3ho-.js",
+      "_InputError-o6lC853a.js",
+      "_InputLabel-B5HUUqYe.js",
+      "_transition-ClgB8LYi.js",
+      "_TextInput-CqVbxlin.js",
+      "_PrimaryButton-BGUaUQyx.js"
+    ]
+  },
+  "resources/js/Pages/Profile/Partials/DeleteUserForm.jsx": {
+    "file": "assets/DeleteUserForm-BM1gKWE1.js",
+    "name": "DeleteUserForm",
+    "src": "resources/js/Pages/Profile/Partials/DeleteUserForm.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_InputError-o6lC853a.js",
+      "_InputLabel-B5HUUqYe.js",
+      "_transition-ClgB8LYi.js",
+      "_TextInput-CqVbxlin.js"
+    ]
+  },
+  "resources/js/Pages/Profile/Partials/UpdatePasswordForm.jsx": {
+    "file": "assets/UpdatePasswordForm-Ci4_HcE1.js",
+    "name": "UpdatePasswordForm",
+    "src": "resources/js/Pages/Profile/Partials/UpdatePasswordForm.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_InputError-o6lC853a.js",
+      "_InputLabel-B5HUUqYe.js",
+      "_PrimaryButton-BGUaUQyx.js",
+      "_TextInput-CqVbxlin.js",
+      "_transition-ClgB8LYi.js"
+    ]
+  },
+  "resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.jsx": {
+    "file": "assets/UpdateProfileInformationForm-CarayNip.js",
+    "name": "UpdateProfileInformationForm",
+    "src": "resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_InputError-o6lC853a.js",
+      "_InputLabel-B5HUUqYe.js",
+      "_PrimaryButton-BGUaUQyx.js",
+      "_TextInput-CqVbxlin.js",
+      "_transition-ClgB8LYi.js"
+    ]
+  },
+  "resources/js/Pages/Reimburse/Create.jsx": {
+    "file": "assets/Create-xYMK42M8.js",
+    "name": "Create",
+    "src": "resources/js/Pages/Reimburse/Create.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AuthenticatedLayout-C-yNcbE4.js",
+      "_InputError-o6lC853a.js",
+      "_ApplicationLogo-D8QEca9e.js",
+      "_LuntianLogo-DgSiHUvq.js",
+      "_ThemeToggle-Dymx3ho-.js"
+    ]
+  },
+  "resources/js/Pages/Reimburse/Index.jsx": {
+    "file": "assets/Index-BzRQ3gVt.js",
+    "name": "Index",
+    "src": "resources/js/Pages/Reimburse/Index.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AuthenticatedLayout-C-yNcbE4.js",
+      "_useCan-DbjV7y3D.js",
+      "_ApplicationLogo-D8QEca9e.js",
+      "_LuntianLogo-DgSiHUvq.js",
+      "_ThemeToggle-Dymx3ho-.js"
+    ]
+  },
+  "resources/js/Pages/Reimburse/Report.jsx": {
+    "file": "assets/Report-CD1RfK9A.js",
+    "name": "Report",
+    "src": "resources/js/Pages/Reimburse/Report.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AuthenticatedLayout-C-yNcbE4.js",
+      "_ApplicationLogo-D8QEca9e.js",
+      "_LuntianLogo-DgSiHUvq.js",
+      "_ThemeToggle-Dymx3ho-.js"
+    ]
+  },
+  "resources/js/Pages/Reimburse/Review.jsx": {
+    "file": "assets/Review-CDHR8T9j.js",
+    "name": "Review",
+    "src": "resources/js/Pages/Reimburse/Review.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AuthenticatedLayout-C-yNcbE4.js",
+      "_ApplicationLogo-D8QEca9e.js",
+      "_LuntianLogo-DgSiHUvq.js",
+      "_ThemeToggle-Dymx3ho-.js"
+    ]
+  },
+  "resources/js/Pages/Settings/FormSetup.jsx": {
+    "file": "assets/FormSetup-DV0XUMgn.js",
+    "name": "FormSetup",
+    "src": "resources/js/Pages/Settings/FormSetup.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AuthenticatedLayout-C-yNcbE4.js",
+      "_InputError-o6lC853a.js",
+      "_useCan-DbjV7y3D.js",
+      "_ApplicationLogo-D8QEca9e.js",
+      "_LuntianLogo-DgSiHUvq.js",
+      "_ThemeToggle-Dymx3ho-.js"
+    ]
+  },
+  "resources/js/Pages/Settings/Index.jsx": {
+    "file": "assets/Index-DXLab5sQ.js",
+    "name": "Index",
+    "src": "resources/js/Pages/Settings/Index.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AuthenticatedLayout-C-yNcbE4.js",
+      "_useCan-DbjV7y3D.js",
+      "_ApplicationLogo-D8QEca9e.js",
+      "_LuntianLogo-DgSiHUvq.js",
+      "_ThemeToggle-Dymx3ho-.js"
+    ]
+  },
+  "resources/js/Pages/Settings/Permissions.jsx": {
+    "file": "assets/Permissions-DR9YGclp.js",
+    "name": "Permissions",
+    "src": "resources/js/Pages/Settings/Permissions.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AuthenticatedLayout-C-yNcbE4.js",
+      "_ApplicationLogo-D8QEca9e.js",
+      "_LuntianLogo-DgSiHUvq.js",
+      "_ThemeToggle-Dymx3ho-.js"
+    ]
+  },
+  "resources/js/Pages/Welcome.jsx": {
+    "file": "assets/Welcome-BY1IwmxV.js",
+    "name": "Welcome",
+    "src": "resources/js/Pages/Welcome.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx"
+    ]
+  },
+  "resources/js/app.jsx": {
+    "file": "assets/app-CuWDBeCo.js",
+    "name": "app",
+    "src": "resources/js/app.jsx",
+    "isEntry": true,
+    "dynamicImports": [
+      "resources/js/Pages/ActivityLog/Index.jsx",
+      "resources/js/Pages/Attendance/Index.jsx",
+      "resources/js/Pages/Auth/ConfirmPassword.jsx",
+      "resources/js/Pages/Auth/ForgotPassword.jsx",
+      "resources/js/Pages/Auth/Login.jsx",
+      "resources/js/Pages/Auth/Register.jsx",
+      "resources/js/Pages/Auth/ResetPassword.jsx",
+      "resources/js/Pages/Auth/VerifyEmail.jsx",
+      "resources/js/Pages/ComingSoon.jsx",
+      "resources/js/Pages/Dashboard.jsx",
+      "resources/js/Pages/Discipline/Create.jsx",
+      "resources/js/Pages/Discipline/Index.jsx",
+      "resources/js/Pages/Discipline/Show.jsx",
+      "resources/js/Pages/Employees/Create.jsx",
+      "resources/js/Pages/Employees/Edit.jsx",
+      "resources/js/Pages/Employees/Index.jsx",
+      "resources/js/Pages/Employees/Show.jsx",
+      "resources/js/Pages/Incidents/Approvals.jsx",
+      "resources/js/Pages/Incidents/Create.jsx",
+      "resources/js/Pages/Incidents/Index.jsx",
+      "resources/js/Pages/Incidents/Show.jsx",
+      "resources/js/Pages/Inventory/Approvals.jsx",
+      "resources/js/Pages/Inventory/Create.jsx",
+      "resources/js/Pages/Inventory/ItemCreate.jsx",
+      "resources/js/Pages/Inventory/ItemEdit.jsx",
+      "resources/js/Pages/Inventory/ItemShow.jsx",
+      "resources/js/Pages/Inventory/Items.jsx",
+      "resources/js/Pages/Inventory/PrintLabel.jsx",
+      "resources/js/Pages/Inventory/Request.jsx",
+      "resources/js/Pages/Inventory/Settings.jsx",
+      "resources/js/Pages/Inventory/Summary.jsx",
+      "resources/js/Pages/Leave/Approvals.jsx",
+      "resources/js/Pages/Leave/Create.jsx",
+      "resources/js/Pages/Leave/History.jsx",
+      "resources/js/Pages/Leave/Request.jsx",
+      "resources/js/Pages/Me/Show.jsx",
+      "resources/js/Pages/Performance/Create.jsx",
+      "resources/js/Pages/Performance/Index.jsx",
+      "resources/js/Pages/Performance/Show.jsx",
+      "resources/js/Pages/Profile/Edit.jsx",
+      "resources/js/Pages/Profile/Partials/DeleteUserForm.jsx",
+      "resources/js/Pages/Profile/Partials/UpdatePasswordForm.jsx",
+      "resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.jsx",
+      "resources/js/Pages/Reimburse/Create.jsx",
+      "resources/js/Pages/Reimburse/Index.jsx",
+      "resources/js/Pages/Reimburse/Report.jsx",
+      "resources/js/Pages/Reimburse/Review.jsx",
+      "resources/js/Pages/Settings/FormSetup.jsx",
+      "resources/js/Pages/Settings/Index.jsx",
+      "resources/js/Pages/Settings/Permissions.jsx",
+      "resources/js/Pages/Welcome.jsx"
+    ],
+    "css": [
+      "assets/app-xPguyXOO.css"
+    ]
+  }
+}
