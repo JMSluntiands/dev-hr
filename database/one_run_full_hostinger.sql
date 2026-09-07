@@ -877,4 +877,23 @@ WHERE NOT EXISTS (SELECT 1 FROM `hr_migrations` WHERE `migration` = '2026_09_05_
 
 SET FOREIGN_KEY_CHECKS = 1;
 
+-- -----------------------------------------------------------------------------
+-- Default admin (email/password login)
+-- Email: admin@luntiands.com  Password: LuntianAdmin@2026
+-- -----------------------------------------------------------------------------
+INSERT INTO `hr_users` (`name`, `email`, `role`, `password`, `email_verified_at`, `created_at`, `updated_at`)
+SELECT
+  'Luntian Admin',
+  'admin@luntiands.com',
+  'admin',
+  '$2y$10$/ZbQbohz/ATvdV.SKqJZ9.6qSUirsLDI3cm9euWj462gft61r3tmW',
+  NOW(),
+  NOW(),
+  NOW()
+WHERE NOT EXISTS (
+  SELECT 1 FROM `hr_users` WHERE `email` = 'admin@luntiands.com'
+);
+
 -- Done. Select database u501101592_luntian first, then run this whole file.
+-- On server also run: php artisan db:seed --class=DefaultAdminSeeder
+-- (syncs admin permissions). Then: php artisan optimize:clear

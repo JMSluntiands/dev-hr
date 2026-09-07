@@ -43,10 +43,15 @@ class GoogleAuthController extends Controller
     {
         try {
             $googleUser = Socialite::driver('google')->user();
-        } catch (Throwable) {
+        } catch (Throwable $e) {
+            report($e);
+
             return redirect()
                 ->route('login')
-                ->with('error', 'Google sign-in failed. Please try again.');
+                ->with(
+                    'error',
+                    'Google sign-in failed. Check GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET, and GOOGLE_REDIRECT_URI on the server (must match '.url('/auth/google/callback').').',
+                );
         }
 
         $email = Str::lower($googleUser->getEmail() ?? '');
@@ -57,7 +62,9 @@ class GoogleAuthController extends Controller
                 ->with('error', 'Only @'.self::ALLOWED_DOMAIN.' Workspace accounts can sign in.');
         }
 
-        $isBootstrapAdmin = in_array($email, self::BOOTSTRAP_ADMINS, true);
+        $isBootstrapAdmin = in_array($email, self::BOOTSTRAP_ADMINS, true)
+            // Fresh install: first Workspace sign-in becomes admin.
+            || ! User::query()->exists();
 
         $user = User::query()->where('email', $email)->first();
 
