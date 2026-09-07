@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AttendanceController;
+use App\Http\Controllers\ComingSoonController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\ActivityLogController;
@@ -135,10 +136,8 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::post('/inventory/request/{inventoryRequest}/status', [InventoryRequestController::class, 'updateStatus'])
         ->name('inventory.request.status');
 
-    Route::get('/inventory/decommission', fn () => Inertia::render('ComingSoon', [
-        'title' => 'Decommission Request',
-        'description' => 'Request to decommission assigned inventory items.',
-    ]))->name('inventory.decommission');
+    Route::get('/inventory/decommission', [ComingSoonController::class, 'inventoryDecommission'])
+        ->name('inventory.decommission');
 
     Route::get('/settings', [SettingsController::class, 'index'])->name('settings.index');
     Route::patch('/settings/users/{user}/role', [SettingsController::class, 'updateRole'])
