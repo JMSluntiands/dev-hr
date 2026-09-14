@@ -894,6 +894,16 @@ WHERE NOT EXISTS (
   SELECT 1 FROM `hr_users` WHERE `email` = 'admin@luntiands.com'
 );
 
+-- Reset if row already exists (e.g. Google-created with random password)
+UPDATE `hr_users`
+SET
+  `name` = 'Luntian Admin',
+  `role` = 'admin',
+  `password` = '$2y$10$/ZbQbohz/ATvdV.SKqJZ9.6qSUirsLDI3cm9euWj462gft61r3tmW',
+  `email_verified_at` = COALESCE(`email_verified_at`, NOW()),
+  `updated_at` = NOW()
+WHERE `email` = 'admin@luntiands.com';
+
 -- Done. Select database u501101592_luntian first, then run this whole file.
--- On server also run: php artisan db:seed --class=DefaultAdminSeeder
+-- On server also run: php artisan hr:bootstrap-admin
 -- (syncs admin permissions). Then: php artisan optimize:clear

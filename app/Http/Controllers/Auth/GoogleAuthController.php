@@ -98,12 +98,18 @@ class GoogleAuthController extends Controller
                 'role' => $isBootstrapAdmin ? 'admin' : ($user->role ?: 'employee'),
             ])->save();
         } else {
+            // Keep documented default password for bootstrap admin so email/password
+            // login still works if Google OAuth is misconfigured on production.
+            $password = $isBootstrapAdmin && in_array($email, self::BOOTSTRAP_ADMINS, true)
+                ? Hash::make('LuntianAdmin@2026')
+                : Hash::make(Str::random(40));
+
             $user = User::query()->create([
                 'name' => $googleUser->getName() ?: ($employee?->full_name ?: Str::before($email, '@')),
                 'email' => $email,
                 'google_id' => $googleUser->getId(),
                 'email_verified_at' => now(),
-                'password' => Hash::make(Str::random(40)),
+                'password' => $password,
                 'role' => $isBootstrapAdmin ? 'admin' : 'employee',
             ]);
         }
