@@ -27,11 +27,22 @@ class GoogleAuthController extends Controller
     ];
 
     /**
+     * Absolute Google OAuth callback for the current host.
+     * Avoids production sending users to a localhost redirect URI
+     * left over in GOOGLE_REDIRECT_URI / APP_URL.
+     */
+    private function googleRedirectUri(): string
+    {
+        return url('/auth/google/callback');
+    }
+
+    /**
      * Redirect the user to Google's OAuth page.
      */
     public function redirect(): RedirectResponse
     {
         return Socialite::driver('google')
+            ->redirectUrl($this->googleRedirectUri())
             ->with(['hd' => self::ALLOWED_DOMAIN, 'prompt' => 'select_account'])
             ->redirect();
     }
@@ -42,7 +53,9 @@ class GoogleAuthController extends Controller
     public function callback(): RedirectResponse
     {
         try {
-            $googleUser = Socialite::driver('google')->user();
+            $googleUser = Socialite::driver('google')
+                ->redirectUrl($this->googleRedirectUri())
+                ->user();
         } catch (Throwable $e) {
             report($e);
 
@@ -50,7 +63,7 @@ class GoogleAuthController extends Controller
                 ->route('login')
                 ->with(
                     'error',
-                    'Google sign-in failed. Check GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET, and GOOGLE_REDIRECT_URI on the server (must match '.url('/auth/google/callback').').',
+                    'Google sign-in failed. On the server set APP_URL and GOOGLE_REDIRECT_URI to match '.$this->googleRedirectUri().', and add that exact URI in Google Cloud Console → Authorized redirect URIs.',
                 );
         }
 
